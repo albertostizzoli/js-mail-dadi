@@ -3,7 +3,7 @@
 //Array
 const mail = [
     'pincopallino@example.com',
-    'topolino@example.com',
+    'cappellaiomatto@example.com',
     'pippo@example.com',
     'paperino90@example.com',
     'alberto93@example.com',
@@ -15,25 +15,26 @@ const alert = document.querySelector('.alert');
 const button = document.querySelector('button');
 
 // Eventi
-button.addEventListener('click', function () {
+button.addEventListener('click', function() {
     alert.className = '.alert .d-none';
     let utentMail = document.getElementById('mail').value;
     let founded = false;
     //Condizioni
     for (let i = 0; i < mail.length; i++) {
-        let utentName = mail[i];
+        const utentName = mail[i];
         if (utentName === utentMail) {
             founded = true;
         } let text, warning;
         if (founded) {
-            warning = '.alert-success';
+            warning = 'alert-success';
             text = ` Bentornato `;
         } else {
-            warning = '.alert-danger';
+            warning = 'alert-danger';
             text = ` L'utente non è registrato `;
         }
         alert.innerText = text;
-        alert.className.add(warning);
+        alert.className.add('.alert-success');
+        alert.className.add('.alert-danger');
         alert.className.remove('.d-none');
     }
 }
