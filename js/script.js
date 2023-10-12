@@ -14,12 +14,12 @@ const mail = [
 const alert = document.querySelector('.alert');
 const button = document.querySelector('button');
 
-// Eventi
+// Creo una funzione che mi permetta di effettuare un check della mail
 button.addEventListener('click', function() {
     alert.className = '.alert .d-none';
     let utentMail = document.getElementById('mail').value;
     let founded = false;
-    //Condizioni
+    //Creo un ciclo che passi in rassegna tutti gli elementi dell'Array
     for (let i = 0; i < mail.length; i++) {
         let utentName = mail[i];
         if (utentName === utentMail) {
@@ -37,7 +37,7 @@ button.addEventListener('click', function() {
             text = ` L'utente non è registrato `;
         }
         alert.innerText = text;
-        alert.className.add(warning);
+        alert.className.add('.alert-success');
         alert.className.remove('.d-none');
 }
 );
