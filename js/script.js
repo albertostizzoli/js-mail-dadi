@@ -1,4 +1,4 @@
-// MAIL
+//  ESERCIZIO MAIL
 
 //Array
 const mail = [
@@ -9,4 +9,21 @@ const mail = [
     'alberto93@example.com',
     'alberto80@example.com',
 ];
+
+// Variabili
+const alert = document.querySelector('.alert');
+const button = document.querySelector('.btn-primary');
+
+// Eventi
+button.addEventListener('click', function(){
+    alert.className = 'alert d-none';
+    let utentMail = document.getElementById('mail').value;
+    let founded = false;
+    //Condizioni
+    
+
+}
+);
+
+
 
