@@ -56,12 +56,13 @@ play.addEventListener('click', function(){
     //Condizioni che eseguirannno il risultato finale
     let result = document.getElementById('play');
     if(player_1 > playerIA){
-       result.innerHTML= `Hai vinto`;
+       Risultato = `Giocatore 1 hai vinto`;
     } else if(player_1 < playerIA){
-        result.innerHTML = `Hai perso`;
-    } else{
-        result.innerHTML = `Pareggio }`;
+      Risultato = `Giocatore 1 hai perso`;
+    } else {
+       Risultato = `Pareggio `;
     }
+    result.innerHTML= Risultato;
 }
 );
 function randomInteger(min,max){
