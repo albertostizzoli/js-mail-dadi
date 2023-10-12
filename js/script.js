@@ -33,8 +33,7 @@ button.addEventListener('click', function() {
             text = ` L'utente non è registrato `;
         }
         alert.innerText = text;
-        alert.className.add('.alert-success');
-        alert.className.add('.alert-danger');
+        alert.className.add(warning);
         alert.className.remove('.d-none');
     }
 }
