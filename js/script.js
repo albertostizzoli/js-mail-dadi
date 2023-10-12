@@ -56,11 +56,11 @@ play.addEventListener('click', function(){
     //Condizioni che eseguirannno il risultato finale
     let result = document.getElementById('play');
     if(player_1 > playerIA){
-       result.innerHTML= `Hai vinto ${randomInteger (1,6)}`;
+       result.innerHTML= `Hai vinto`;
     } else if(player_1 < playerIA){
-        result.innerHTML = `Hai perso ${randomInteger (1,6)}`;
+        result.innerHTML = `Hai perso`;
     } else{
-        result.innerHTML = `Pareggio ${randomInteger (1,6)}`;
+        result.innerHTML = `Pareggio }`;
     }
 }
 );
