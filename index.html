@@ -13,13 +13,28 @@
     <!--Esercizio Mail -->
     <h1 class="text-center">Controllo E-Mail</h1>
     <div class="container">
-    <div class="mb-3 text-center">
-        <label for="inputEmail4" class="form-label">Verifica la tua e-mail</label>
-        <input type="email" class="form-control" id="mail" name="mail" value="">
+        <div class="mb-3 text-center">
+            <label for="inputEmail4" class="form-label">Verifica la tua e-mail</label>
+            <input type="email" class="form-control" id="mail" name="mail" value="">
+        </div>
+        <button class="btn btn-primary ">Verifica</button>
+        <div class="alert alert-danger d-none"></div>
+        <div class="alert alert-success d-none"></div>
     </div>
-    <button class="btn btn-primary ">Verifica</button>
-    <div class="alert alert-danger d-none"></div>
-    <div class="alert alert-success d-none"></div>
+
+    <!--Gioco a Dadi -->
+    <h2 class="text-center mt-3">Gioco a Dadi</h2>
+    <div class="container">
+        <div class="py-2 m-auto">
+            <label for="exampleFormControlInput1" class="form-label py-2">Giocatore</label>
+            <input type="text" class="form-control" id="player" name="text" value="">
+            <label for="exampleFormControlInput1" class="form-label py-2">IA</label>
+            <input type="text" class="form-control" id="cpu" name="text" value="">
+        </div>
+        <div class="mb-3 d-flex justify-content-center py-3">
+            <button id="search" class="btn btn-secondary text-light me-4">Gioca</button>
+            <button id="cancel" class="btn btn-secondary text-light">Annulla</button>
+        </div>
     </div>
 
     <script src="js/script.js"></script>
