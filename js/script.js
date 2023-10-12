@@ -60,7 +60,7 @@ play.addEventListener('click', function(){
     } else if(player_1 < playerIA){
         result.innerHTML = `Ha perso ${randomInteger (1,6)}`;
     } else{
-        result.innerHTML = `Pareggio ${randomInteger (1,10)}`;
+        result.innerHTML = `Pareggio ${randomInteger (1,6)}`;
     }
 }
 );
