@@ -24,7 +24,9 @@ button.addEventListener('click', function() {
         let utentName = mail[i];
         if (utentName === utentMail) {
             founded = true;
-        } let text, warning;
+        } 
+    }
+    let text, warning;
         if (founded) {
             warning = 'alert-success';
             text = ` Bentornato `;
@@ -35,7 +37,6 @@ button.addEventListener('click', function() {
         alert.innerText = text;
         alert.className.add(warning);
         alert.className.remove('.d-none');
-    }
 }
 );
 
