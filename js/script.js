@@ -44,3 +44,27 @@ button.addEventListener('click', function() {
 
 // ESERCIZIO DADI
 
+//creo una costante che mi generi un numero da 1 a 6 per il giocatore
+const player = document.getElementById('player').value;
+
+// creo una costante che mi generi un numero da 1 a 6 per il computer
+const IA = document.getElementById('cpu').value;
+
+play.addEventListener('click', function(){
+    let player_1 = Math.floor((Math.random()* 6) +1);
+    let playerIA = Math.floor((Math.random()* 6) +1);
+    //Condizioni che eseguirannno il risultato finale
+    let result = document.getElementById('play');
+    if(player_1 > playerIA){
+       result.innerHTML= `Hai vinto`;
+    } else if(player_1 > playerIA){
+        result.innerHTML = `Hai perso`;
+    } else{
+        result.innerHTML = `Pareggio`;
+    }
+}
+);
+function randomInteger(min,max){
+    return Math.floor (Math.random() * (max -min + 1)) + min;
+}
+
