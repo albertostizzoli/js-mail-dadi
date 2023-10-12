@@ -21,7 +21,7 @@ button.addEventListener('click', function() {
     let founded = false;
     //Condizioni
     for (let i = 0; i < mail.length; i++) {
-        const utentName = mail[i];
+        let utentName = mail[i];
         if (utentName === utentMail) {
             founded = true;
         } let text, warning;
