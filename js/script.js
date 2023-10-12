@@ -27,9 +27,11 @@ button.addEventListener('click', function() {
         } 
     }
     let text, warning;
+        // Se la mail viene trovata
         if (founded) {
             warning = 'alert-success';
             text = ` Bentornato `;
+        //Altrimenti
         } else {
             warning = 'alert-danger';
             text = ` L'utente non è registrato `;
